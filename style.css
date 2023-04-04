@@ -1,0 +1,22 @@
+.d-item {
+    height: 700px;
+}
+/* unvisited link */
+.c-item:link {
+    color: green;
+  }
+  
+  /* visited link */
+  .c-item:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  .c-item:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  .c-item:active {
+    color: purple;
+  } 
