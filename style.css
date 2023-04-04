@@ -3,7 +3,7 @@
 }
 /* unvisited link */
 .c-item:link {
-    color: green;
+    color: black;
   }
   
   /* visited link */
@@ -20,3 +20,16 @@
   .c-item:active {
     color: purple;
   } 
+
+  #login-section {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-login {
+    margin-top: 20px; /* cambia el valor de píxeles según lo que necesites */
+  }
+
+  .login-box {
+    border: 2px solid #333;
+  }
