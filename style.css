@@ -1,0 +1,47 @@
+.d-item {
+    height: 700px;
+}
+/* unvisited link */
+.c-item:link {
+    color: black;
+  }
+  
+  /* visited link */
+  .c-item:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  .c-item:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  .c-item:active {
+    color: purple;
+  } 
+
+  #login-section {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-login {
+    margin-top: 20px; /* cambia el valor de píxeles según lo que necesites */
+  }
+
+  .login-box {
+    border: 2px solid #333;
+  }
+
+  .d-itemcard {
+    height: 400px;
+}
+
+.textc {
+  color: white;
+}
+
+.textc2 {
+  color: black;
+}

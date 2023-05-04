@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+
+<body style="background-color: black">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold" href="#"><img src="img/cepillo.png" alt="logo" width="80" class="img-fluid" > GrupoCero</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link c-item fs-5 " aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-item fs-5" href="galeriaarte.html">Galería de Arte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-item fs-5" href="Infomacionartista.html">Información del Artista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-item fs-5" href="./contacto.html">Contacto</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>  
+            </form>
+            
+            <a href="./registrarse.html"><button class="btn btn-outline-success mx-2" type="submit">Registrarse</button></a>
+    
+          </div>
+        </div>
+      </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6" style="margin: auto; margin-top: 30px; ">
+        <div class="card" style="border: solid; border-color:red">
+          <div class="card-header text-center">
+            <h1>Login</h1>
+          </div>
+          <div class="card-body">
+            <form novalidate action="" method="POST" enctype="application/x-www-form-urlencoded" name="frm_login" id="login_form">
+              <div class="mb-3">
+                <label for="username" class="form-label">Nombre usuario</label>
+                <input type="text" class="form-control" id="username" />
+                <div class="valid-feedback">
+                  User name correcto
+                </div>
+
+                <div class="invalid-feedback">
+                  Incorrecto
+                </div>
+              
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
+
+              <div class="mb-3">
+                <a href="" style="color: gray; text-decoration: none">
+                  Forgot Password?
+                </a>
+              </div>
+
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit"  class="btn btn-primary"
+                  style="border-radius: 30px">Login</button>
+              </div>
+              <br>
+              <div class="text-center">
+                Not a member? <a href="">Signup</a>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  function validarDatos()
+  {
+    var username = document.getElementById("username");
+    if(username.value < 5)
+    {
+      alert("el usuario debe ser mayor a 5 caracteres");
+    }
+
+    if(document.getElementById("password").value == "")
+    {
+      alert("La password no puede ser vacia");
+
+      return;
+    }
+
+    console.log("Datos correctos para el usuario "+username);
+
+  }
+
+var form = document.getElementById("login_form");
+
+form.addEventListener('submit', function(event){
+  event.preventDefault();
+  event.stopPropagation();
+
+  var username = document.getElementById("username");
+  username.classList.remove("is-invalid","is-valid");
+  
+  if(username.value == "")
+  {
+    username.classList.add("is-invalid");
+  }
+  else{
+    username.classList.add("is-valid");
+
+  }
+
+
+});
+
+  
+
+</script>
