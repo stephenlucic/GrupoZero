@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Grupo Cero</title>
-    <style>
-      .img-fluid {
-        max-height: 200px;
-        cursor: pointer;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Grupo Cero</title>
+
 </head>
-<body class="bg-dark">
-    
+
+<body class="bg-image" style="background-image: url('img/fondodepantalla2.jpg'); background-size: cover; height: 100vh;">
+
+  <!-- comienzo Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success-subtle">
     <div class="container-fluid">
-      <a class="navbar-brand fs-3 fw-bold" href="index.html"><img src="img/cepillo.png" alt="logo" width="80" class="img-fluid" > GrupoCero</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fs-3 fw-bold" href="index.html"><img src="img/cepillo.png" alt="logo" width="80"
+          class="img-fluid"> GrupoCero</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,51 +37,97 @@
           <li class="nav-item">
             <a class="nav-link c-item fs-5" href="./contacto.html">Contacto</a>
           </li>
-         
+
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
-        <a href="./registrarse.html"><button class="btn btn-outline-success mx-2" type="submit">Registrarse</button></a>
-
-        
+        <a href="iniciarsesion.html"><button class="btn btn-outline-success mx-2" type="submit">Iniciar
+            Sesión</button></a>
       </div>
     </div>
   </nav>
-</head>
+  <!-- Final Navbar -->
+
+<!-- Comienzo galería de arte -->
+<div class="container">
+  <div class="row">
+    <div class="col-12" style="margin: auto; margin-top: 30px;  ">
+      <div class="card" style="background: rgb(55, 55, 109)">
+        <div class="card-header text-center">
+            <h1 class="textc ">Galería de Arte</h1>
+          </div>
+        <div class="row row-cols-1 row-cols-md-5 g-4 p-3">
+          <div class="col">
+            <div class="card h-100 card text-bg-dark mb-3">
+              <img src="img/vangohpintura2.jpg" class="card-img-top img-fluid imgobra" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Los Girasoles</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="card-text text-light">Obra de Vincent van Gogh</small>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card text-bg-dark mb-3">
+              <img src="img/picassopintura.webp" class="card-img-top img-fluid imgobra" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="card-text text-light">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card text-bg-dark mb-3">
+              <img src="img/dalipintura.jpg" class="card-img-top img-fluid imgobra" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="card-text text-light">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card text-bg-dark mb-3">
+              <img src="img/kahlo_autorretrato_monos.webp" class="card-img-top img-fluid imgobra" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="card-text text-light">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Final galería de arte -->
 
 
-	<div class="container">
-		<h1 class="textc">Galería de Arte</h1>
-		<div class="row">
-			<div class="col-md-3">
-				<img src="./img/vangohpintura2.jpg" class="img-fluid">
-        <p class="textc">Los Girasoles</p>
-        <p class="textc">Obra de Vincent van Gogh</p>
-			</div>
-			<div class="col-md-3">
-				<img src="./img/picassopintura.webp" class="img-fluid">
-        <p class="textc">Jacqueline Roque</p>
-        <p class="textc">Obra de Picasso</p>
-			</div>
-			<div class="col-md-3">
-				<img src="./img/dalipintura.jpg" class="img-fluid" >
-        <p class="textc">Peligrosa Ilusion</p>
-        <p class="textc">Obra de Dalí</p>
-			</div>
-			<div class="col-md-3">
-				<img src="./img/kahlo_autorretrato_monos.webp" class="img-fluid">
-        <p class="textc">Autorretrato con monos</p>
-        <p class="textc">Obra de Frida Kahlo</p>
-			</div>
-		</div>
-		
 
-      
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
